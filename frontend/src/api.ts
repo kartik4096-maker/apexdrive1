@@ -1,6 +1,6 @@
 import type { Car, CarDetail, BookingSummary, Review } from "./types";
 
-const BASE = (import.meta.env.VITE_API_URL as string) || "http://localhost:4000/api";
+const BASE = "/api";
 
 interface ApiError { error: { code: string; message: string; issues?: { path: (string|number)[]; message: string }[] } }
 
